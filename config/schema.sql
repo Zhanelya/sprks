@@ -99,7 +99,7 @@ CREATE TABLE IF NOT EXISTS `policies` (
   `pass_id` int(11) DEFAULT NULL,
   `pw_id` int(11) DEFAULT NULL,
   `date` date NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id_policy`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -133,7 +133,6 @@ CREATE TABLE IF NOT EXISTS `scores` (
   `score_type` int(11) NOT NULL,
   `score_value` decimal(5,2) NOT NULL,
   `date` date NOT NULL,
-  `rank` int(11) NOT NULL,
   PRIMARY KEY (`idscores`),
   KEY `userid_idx` (`userid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
